@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #143236; /* Light cyan background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+    .registration-form {
+        background-color: #f8f9fa; /* Light gray background */
+        border: 2px solid #ced4da; /* Gray border */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+                    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+                    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+                    100px 100px 80px rgba(0, 0, 0, 0.09);
+        width: 400px; /* Increased width */
+        max-height: 500px; /* Added max-height */
+        overflow-y: auto; /* Added overflow for scrollable content */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition effects */
+    }
+
+.registration-form:hover {
+    transform: scale(1.05); /* Scale the form slightly on hover */
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.04),
+                15px 15px 12px rgba(0, 0, 0, 0.06),
+                36px 36px 29px rgba(0, 0, 0, 0.08),
+                120px 120px 96px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+.registration-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #212529;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #95a5a6;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #212529;
+    box-sizing: border-box;
+}
+
+.registration-form input::placeholder,
+.registration-form textarea::placeholder {
+    color: #7f8c8d;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #f13a11;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.registration-form button:hover {
+    background-color: #ff5733;
+}
+
+.registration-form button:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px #ff5733;
+}
+
+.back-to-main {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+
